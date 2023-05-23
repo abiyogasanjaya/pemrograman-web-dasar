@@ -21,6 +21,21 @@
             align-items: center;
         }
 
+        h1 {
+            font-size: 2rem;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        a:hover {
+            font-size: 1.2rem;
+            color: darkorchid;
+        }
+
         .container {
             height: 75%;
             width: 60%;
@@ -28,13 +43,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid rgb(86, 86, 86);
+            border: 2px solid rgba(86, 86, 86, 0);
             border-radius: 5rem;
+            box-shadow: 1px 2px 10px rgb(178, 178, 178);
+            transition: .2s;
+        }
+
+        .container:hover {
+            box-shadow: 1px 2px 40px rgb(178, 178, 178);
         }
 
         .inside {
             display: flex;
+            align-items: center;
             flex-direction: column;
+            gap: 2rem;
         }
     </style>
 
@@ -43,7 +66,8 @@
     <div class="container">
         <div class="inside">
             <h1>Made-Budhi</h1>
-            <p>Saya Budhi.</p>
+            <p>Saya Budhi</p>
+            <p>Follow <a target="_blank" href="https://www.instagram.com/made_budhi">Instagram</a> saya.</p>
         </div>
     </div>
 </body>
