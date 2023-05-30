@@ -49,7 +49,7 @@
     </li>
   </ul>
   <div class="container-fluid">
-    <div class="row m-3">
+    <div class="row m-2">
       <!-- list group kiri -->
       <div class="col-sm-3">
         <ul class="list-group">
@@ -67,7 +67,6 @@
           <li class="list-group-item">A third item</li>
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
-          <li class="list-group-item">An item</li>
           <li class="list-group-item">An item</li>
         </ul> 
       </div>
@@ -95,35 +94,50 @@
           </button>
         </div>
         <!-- card -->
-        <div class="card-group pt-lg-5">
+        <div class="card-group pt-lg-2">
+          <!-- card 1 -->
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text </p>
+            <div class="d-flex">
+              <div class="col-3">
+                <img src="https://www.sprite.com/content/dam/nagbrands/us/sprite/en/new-cans-7-18-22/tropical-mix/sprite-tropical-mix-pdp-image-20ozbottle-desktop.png" class="card-img-top pt-lg-2" alt="Product 1" style="width: 90px;">
+              </div> 
+              <div class="card-body col-9 pt-lg-2">
+                <h5 class="card-title">SPRITE® TROPICAL MIX</h5>
+                <p class="card-text">An ode to our past for all the Sprite Remix fans from the early 2000s.</p>
+              </div>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <button class="btn btn-primary text-white justify-content-center"><a class="text-decoration-none text-white"href="https://www.sprite.com/products/sprite-tropical-mix">Check Out</a></button>
             </div>
           </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a </p>
+          <!-- card 2 -->
+          <div class="card ">
+            <div class="d-flex">
+              <div class="col-3">
+                <img src="https://www.sprite.com/content/dam/nagbrands/us/sprite/en/new-cans-7-18-22/cherry/sprite-cherry-pdp-image-12ozcan-desktop.png" class="card-img-overlays pt-lg-2" alt="Product 1" style="width: 80px;">
+              </div>
+              <div class="card-body col-9 pt-lg-2">
+                <h5 class="card-title">SPRITE® CHERRY</h5>
+                <p class="card-text mb-4">ce-cold refreshment with just the right amount of cherry.</p>
+              </div>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <button class="btn btn-primary text-white"><a class="text-decoration-none text-white"href="https://www.sprite.com/products/sprite-cherry">Check Out</a></button>
             </div>
           </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below</p>
+          <!-- Card 3 -->
+          <div class="card ">
+            <div class="d-flex">
+              <div class="col-3">
+                <img src="https://www.sprite.com/content/dam/nagbrands/us/sprite/en/2531-22-sprite-zero-sugar-vis-refresh/plp/sprite-zero-sugar-can.png" class="card-img-overlays pt-lg-2" alt="Product 1" style="width: 90px;">
+              </div>
+              <div class="card-body col-9 pt-lg-2">
+                <h5 class="card-title">SPRITE® ZERO SUGAR</h5>
+                <p class="card-text mb-4">The iconic great taste of Sprite with zero sugar.</p>
+              </div>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <button class="btn btn-primary text-white"><a class="text-decoration-none text-white"href="https://www.sprite.com/products/sprite-zero-sugar">Check Out</a></button>
             </div>
           </div>
         </div>
@@ -142,7 +156,7 @@
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li> 
         </ul> 
-        <a href="wwww.sprite.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgE0oXlQCl1GLVCJJHWoS8iHHA-uQmo4Vtz94eC5RxW9Msr1EnWmwbHDjubLlTg_lPCDY&usqp=CAU alt="" width="300px"></a>
+        <a href="https://www.sprite.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgE0oXlQCl1GLVCJJHWoS8iHHA-uQmo4Vtz94eC5RxW9Msr1EnWmwbHDjubLlTg_lPCDY&usqp=CAU alt="" width="300px"></a>
       </div>
     </div>
     
