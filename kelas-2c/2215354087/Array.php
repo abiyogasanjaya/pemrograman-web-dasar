@@ -18,6 +18,7 @@
             Kelompokkan nama-nama di bawah ini ke dalam Array.
             Kids : "Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" 
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
+            
         */
     $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" ); // Lengkapi di sini
     $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
