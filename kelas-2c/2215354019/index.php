@@ -12,10 +12,10 @@
         <div class="nav-1 bg-light w-100">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Gift Card</a>
+                  <a class="nav-link" href="#">Location</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Track Order</a>
+                  <a class="nav-link" href="#">Popular</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link">Contact Us</a>
@@ -41,13 +41,13 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#">travel</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">About Us</a>
+                  <a class="nav-link">Recomendation</a>
                 </li>
               </ul>
         </div>
@@ -73,12 +73,7 @@
                     <li class="list-group-item">A second item</li>
                     <li class="list-group-item">A third item</li>
                     <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                   
                   </ul>
             </div>
             <div class="col-9">
@@ -87,13 +82,13 @@
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="https://images.unsplash.com/photo-1471478108131-9b2335c21611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://w.wallhaven.cc/full/l8/wallhaven-l83o92.jpg" class="d-block w-100" alt="...">
                               </div>
                               <div class="carousel-item" data-bs-interval="2000">
-                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" class="d-block w-100" alt="...">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1464219551459-ac14ae01fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" class="d-block w-100" alt="...">
                               </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -114,58 +109,59 @@
                             <li class="list-group-item">A fourth item</li>
                             <li class="list-group-item">And a fifth one</li>
                             <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
                           </ul> 
+                          <!-- edit -->
+                          <div class="card mt-3" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
                 
                 <div class="row">
                     <div class="col-8">
                         <div class="row mt-5 justify-content-around">
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1471478108131-9b2335c21611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
-                                <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
+                                <h5 class="card-title">Travel</h5>
+                                <p class="card-text">ISEKAI</p>
+                                <a href="#" class="btn btn-success">Otw Sekarang</a>
                                 </div>
                             </div>
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
-                                <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
+                                <h5 class="card-title">Travel</h5>
+                                <p class="card-text">ISEKAI</p>
+                                <a href="#" class="btn btn-success">Otw Sekarang</a>
                                 </div>
                             </div>
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1464219551459-ac14ae01fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
-                                <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
+                                <h5 class="card-title">Travel</h5>
+                                <p class="card-text">ISEKAI</p>
+                                <a href="#" class="btn btn-success">Otw Sekarang</a>
                                 </div>
                             </div>
                           </div>
                     </div>
                     <div class="col-4">
                         <div class="mt-5">
-                            <img src="https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="">
+                            <img src="" alt="">
                           </div>  
                     </div>
+             
+                  
                 </div>
             </div>
             <div class="col-3">
-          
+            
                    
             </div>
         </div>
