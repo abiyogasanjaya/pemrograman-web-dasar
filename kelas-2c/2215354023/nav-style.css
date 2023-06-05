@@ -19,6 +19,9 @@ div.top-nav {
 .search-bar ul {
     display: flex;
     justify-content: space-evenly;
+}
+
+ul {
     list-style-type: none;
 }
 
@@ -30,8 +33,14 @@ div.top-nav {
 
 .search-bar div input {
     width: 70%;
+    border: 2px solid;
     padding: .5rem;
     border-radius: .5rem;
+    transition: .2s;
+}
+
+.search-bar div input:hover {
+    border: 2px solid #03AC0E;
 }
 
 nav ul {
@@ -42,7 +51,6 @@ nav ul {
 }
 
 a {
-    text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
 }
