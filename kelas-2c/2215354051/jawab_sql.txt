@@ -1,0 +1,59 @@
+Soal No 1
+
+CREATE DATABASE perpustakaan
+
+Soal No 2
+
+CREATE TABLE tb_user(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nama varchar (225),
+    email varchar (225),
+    password varchar (225)
+    );
+
+Soal No 3
+
+CREATE TABLE tb_kategori(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nama varchar(255)
+    );
+
+Soal No 4
+
+CREATE TABLE tb_buku(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    judul varchar(255),
+    penerbit varchar (255),
+    pengarang varchar (255),
+    tahun_terbit YEAR,
+    kategori_id INT FOREIGN KEYS REFERENCES id ON tb_kategori
+    );
+
+Soal no 5
+
+INSERT INTO tb_user (nama, email, password)
+VALUES ("John Doe","john@doe.com","john123"),
+	   ("Jane Doe","jane@doe.com","jenita123")
+
+Soal No 6
+
+INSERT INTO tb_kategori (nama)
+VALUES ("Novel"),
+       ("Dongeng"),
+       ("Komik")
+
+Soal No 7
+
+INSERT INTO tb_buku (judul, penerbit, pengarang, tahun_terbit, kategori_id)
+VALUES ("Ayat-ayat Cinta","Basmala","Habibburahman","2004","1"),
+	   ("Dilan 1990","Pastel Books","Pidi Baiq","2018","1"),
+       ("Timun Mas","Keira","Dede Firmansyah","2017","2")
+
+Soal No 8
+
+SELECT * FROM tb_buku
+JOIN tb_kategori ON tb_buku.kategori_id = tb_kategori.id
+
+Soal No 9
+
+UPDATE tb_buku SET tahun_terbit = 2001 WHERE judul = "ayat-ayat Cinta";
