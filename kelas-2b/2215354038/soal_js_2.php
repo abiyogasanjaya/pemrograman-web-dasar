@@ -47,12 +47,9 @@
             Buatlah sebuah fungsi bernama teriak(), yang mengembalikan nilai berupa "Halo Function!", yang kemudian akan ditampilkan di halaman html.
             Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
         */
-
         
         function teriak() {
-            // Tulis Code mulai di sini
-
-            // Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
+            document.getElementById("jawaban1").innerHTML= "Halo Function!"
         }
         
         // Jalankan function teriak
@@ -69,8 +66,10 @@
         
         function kalikan(num1, num2) {
             // Code kamu mulai dari sini
+            var kali = num1 * num2
 
 
+            document.getElementById("jawaban2").innerHTML= kali
 
             // Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
         }
@@ -99,7 +98,9 @@
     
         function buatKalimat(nama, umur, alamat, hobi) {
             // Code kamu mulai dari sini
+            var kalimat = "Nama saya "+ nama +" umur saya "+ age +" alamat saya di "+ address + " dan saya punya hobby yaitu "+ hobby +"!"
 
+            document.getElementById("jawaban3").innerHTML= kalimat
             // Tampilkan dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH.
         }
 
