@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budhi | Jago</title>
+
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        a:hover {
+            font-size: 1.2rem;
+            color: darkorchid;
+        }
+
+        .container {
+            height: 75%;
+            width: 60%;
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba(86, 86, 86, 0);
+            border-radius: 5rem;
+            box-shadow: 1px 2px 10px rgb(178, 178, 178);
+            transition: .2s;
+            position: relative;
+        }
+
+        .container:hover {
+            box-shadow: 1px 2px 40px rgb(178, 178, 178);
+        }
+
+        .inside {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .tes {
+            position: absolute;
+            color: rgba(0, 0, 0, 0);
+            bottom: 1px;
+        }
+
+        @media (max-width: 730px) {
+            .container {
+                border: none;
+                box-shadow: none;
+            }
+
+            .container:hover {
+                box-shadow: none;
+            }
+
+            .tes {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="inside">
+            <h1>Made-Budhi</h1>
+            <p>Saya Budhi</p>
+            <p>Follow <a target="_blank" href="https://www.instagram.com/made_budhi">Instagram</a> saya.</p>
+            <p class="tes">Ciee, mau nge-tes responsive ya</p>
+        </div>
+    </div>
+</body>
+</html>
