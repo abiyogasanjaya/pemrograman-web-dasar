@@ -24,7 +24,15 @@ CREATE TABLE tb_buku(
     FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
 )
 3.Soal Database 3
-
+A.
+INSERT INTO `tb_user`(`id`, `name`, `email`, `password`) VALUES 
+('','John Doe','john@doe.com','john123'),
+('','Jane Doe','jane@doe.com','janila123');
+B.
+INSERT INTO `tb_kategori`(`id`, `name`) VALUES 
+('','Novel'),
+('','Dongeng'),
+('','Komik')
 4.Soal Database 4
 
 5.Soal Database 5
