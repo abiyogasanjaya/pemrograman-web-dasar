@@ -1,0 +1,45 @@
+1.Soal Database 1
+    CREATE DATABASE perpustakaan;
+
+2.Soal Database 2
+    a.  CREATE TABLE tb_user (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(255),
+            email VARCHAR(255),
+            password  VARCHAR(255)
+        );
+    b.  CREATE TABLE tb_kategori (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(255)
+        );
+    c.  CREATE TABLE tb_buku (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            judul VARCHAR(255),
+            penerbit VARCHAR(255),
+            pengarang VARCHAR(255),
+            tahun_terbit YEAR,
+            kategori_id INT,
+            FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+        );
+
+3.Soal Database 3
+    a. INSERT INTO `tb_user`(`name`, `email`, `password`) VALUES 
+            ('John Doe','john@doe.com','john123'),
+            ('Jane Doe','jane@doe.com','jenita123');
+    b. INSERT INTO `tb_kategori`(`name`) VALUES 
+            ('Novel'),
+            ('Dongeng'),
+            ('Komik')
+    c.INSERT INTO `tb_buku` (`judul`, `penerbit`, `pengarang`, `tahun_terbit`, `kategori_id`) VALUES 
+            ('Ayat - ayat cinta', 'Rasmala', 'Habibburahman', 2004, 1),
+            ('Dilan 1990', 'Pastel Books', 'Pidi Baiq', 2018, 1),
+            ('Timun Mas', 'Keira', 'Dede Firmansyah', 2017, 2);
+        
+4.Soal Database 4
+    SELECT * FROM `tb_buku` 
+    JOIN  `tb_kategori` ON `tb_buku`.`kategori_id`=tb_kategori.id
+
+5.Soal Database 5
+	UPDATE `tb_buku` 
+    SET tahun_terbit=2001 
+    WHERE judul='Ayat - ayat cinta'
