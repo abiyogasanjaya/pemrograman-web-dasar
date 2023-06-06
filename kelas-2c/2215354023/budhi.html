@@ -47,6 +47,7 @@
             border-radius: 5rem;
             box-shadow: 1px 2px 10px rgb(178, 178, 178);
             transition: .2s;
+            position: relative;
         }
 
         .container:hover {
@@ -60,7 +61,13 @@
             gap: 2rem;
         }
 
-        @media (max-width: 600px) {
+        .tes {
+            position: absolute;
+            color: rgba(0, 0, 0, 0);
+            bottom: 1px;
+        }
+
+        @media (max-width: 730px) {
             .container {
                 border: none;
                 box-shadow: none;
@@ -68,6 +75,10 @@
 
             .container:hover {
                 box-shadow: none;
+            }
+
+            .tes {
+                color: rgba(0, 0, 0, 1);
             }
         }
     </style>
@@ -79,6 +90,7 @@
             <h1>Made-Budhi</h1>
             <p>Saya Budhi</p>
             <p>Follow <a target="_blank" href="https://www.instagram.com/made_budhi">Instagram</a> saya.</p>
+            <p class="tes">Ciee, mau nge-tes responsive ya</p>
         </div>
     </div>
 </body>
