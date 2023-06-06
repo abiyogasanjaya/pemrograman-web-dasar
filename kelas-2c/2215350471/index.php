@@ -41,7 +41,7 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#">Rent</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Blog</a>
@@ -87,13 +87,13 @@
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="https://images.unsplash.com/photo-1471478108131-9b2335c21611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://www.sony.co.id/content/dam/sony/contents/global/camera/alpha-interchangeable-lens-cameras/common/bannerimage/homepage/zv-e1/4span/D_ZV-E1_4span.jpg" width="720px" height="760px"...">
                               </div>
                               <div class="carousel-item" data-bs-interval="2000">
-                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://www.sony.co.id/content/dam/sony/contents/global/cameras/alpha-interchangeable-lens-cameras/common/bannerimage/year-2021-hp/ilce-1/4span/Desktop_ILCE-1_4span.jfif" width="720px" height="760px...">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1464219551459-ac14ae01fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                                <img src="https://www.sony.co.id/content/dam/sony/contents/global/cameras/alpha-interchangeable-lens-cameras/year2022/homepage/ilme-fx30/4span/Desktop_ILME-FX30_4span.jpg" width="720px" height="760px...">
                               </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -120,11 +120,27 @@
                             <li class="list-group-item">And a fifth one</li>
                             <li class="list-group-item">An item</li>
                             <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
+                            
+                            <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
                           </ul> 
                     </div>
+
+                    
 
                 </div>
                 
@@ -132,42 +148,40 @@
                     <div class="col-8">
                         <div class="row mt-5 justify-content-around">
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1471478108131-9b2335c21611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://static.wixstatic.com/media/5bed48_224ac896822548779bcdd4808731fe6e~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5bed48_224ac896822548779bcdd4808731fe6e~mv2.jpg" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
+                                <h5 class="card-title">Rp 400.000</h5>
+                                <p class="card-text">Camera rent. Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
                                 </div>
                             </div>
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://static.wixstatic.com/media/5bed48_968887522be64a6ebfa91ade32c38d47~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5bed48_968887522be64a6ebfa91ade32c38d47~mv2.jpg" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
+                                <h5 class="card-title">Rp 370.000</h5>
+                                <p class="card-text">Camera rent. Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
                                 </div>
                             </div>
                             <div class="card text-center" style="width: 13rem;">
-                                <img src="https://images.unsplash.com/photo-1464219551459-ac14ae01fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top mt-4" alt="...">
+                                <img src="https://static.wixstatic.com/media/5bed48_639e10b2f06c4ff68e13afdd754193ab~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5bed48_639e10b2f06c4ff68e13afdd754193ab~mv2.jpg" class="card-img-top mt-4" alt="...">
                                 <div class="card-body">
-                                <h5 class="card-title">Rp 50.000</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi quibusdam, corporis blanditiis exercitationem culpa asperiores consequuntur sapiente.</p>
+                                <h5 class="card-title">Rp 350.000</h5>
+                                <p class="card-text">Camera rent. Lorem ipsum dolor sit amet.</p>
                                 <a href="#" class="btn btn-success">Tambah ke Keranjang</a>
                                 </div>
                             </div>
                           </div>
                     </div>
-                    <div class="col-4">
-                        <div class="mt-5">
-                            <img src="https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="">
+                      <div class="col-4">
+                          <div class="mt-5">
+                              <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="">
                           </div>  
-                    </div>
-                </div>
+                      </div>
+                  </div>
+                  
             </div>
-            <div class="col-3">
-          
-                   
-            </div>
+            
         </div>
     </div>
     
