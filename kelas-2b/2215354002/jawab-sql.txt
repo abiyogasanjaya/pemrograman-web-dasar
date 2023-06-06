@@ -2,7 +2,7 @@
 CREATE DATABASE perpustakaan;
 2.Soal Database 2
 CREATE TABLE tb_user (
-    id Varchar(255),
+    id int AUTO_INCREMENT PRIMARY KEY,
     name Varchar(255),
     email Varchar(255),
    password  Varchar(255)
