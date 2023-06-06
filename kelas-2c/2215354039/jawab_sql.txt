@@ -1,0 +1,45 @@
+1).membuat database-------------------->
+a.buat database :
+CREATE DATABASE perpustakaan;
+
+2).membuat tabel---------------------->
+a.buat tabel tb_user:
+CREATE TABLE tb_user(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+);
+
+b.buat tabel tb_kategori:
+CREATE TABLE tb_kategori(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255)
+);
+
+c.buat tabel tb_buku:
+CREATE TABLE tb_buku(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    judul varchar(255),
+    penerbit varchar(255),
+    pengarang varchar(255),
+    tahun_terbit YEAR,
+    kategori_id int,
+    FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+);
+
+3.memasukan data pada tabel-------------->
+a. tb_user :
+INSERT INTO tb_user (name,email,password) VALUES('jhon doe','jhon@doe.com','jhon123'),('jane Doe','jane@doe.com','jenita123');
+b. tb_kategori :
+INSERT INTO tb_kategori (name) VALUES('novel'),('dongeng'),('komik');
+c. tb_buku :
+INSERT INTO tb_buku (judul,penerbit,pengarang,tahun_terbit,kategori_id) VALUES('ayat-ayat cinta','Basmala','Habibburahman','2004','1'),('Dilan 1990','Pastel Books','Pidi Baiq','2018','1'),('Timun mas','Keira','Dede firmansyah','2017','2');
+
+4.tampilkan data buku dari tb_buku---------->
+SELECT * FROM tb_buku JOIN tb_kategori ON tb_buku.kategori_id = tb_kategori.id;
+
+5.ubah data tb_buku------------------>
+UPDATE tb_buku SET tahun_terbit = "2001" WHERE judul = "ayat-ayat cinta";
+
+
