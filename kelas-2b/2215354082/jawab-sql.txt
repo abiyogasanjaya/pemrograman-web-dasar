@@ -1,0 +1,37 @@
+1. CREATE Database: `perpustakaan`
+
+2.
+A. CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+);
+  
+B. CREATE TABLE `tb_kategori` (
+  `id` INT(11) PRIMARY KEY AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL
+);
+
+C. CREATE TABLE tb_buku(
+    id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    judul Varchar(255) NOT NULL,
+    penerbit Varchar(255) NOT NULL,
+    pengarang Varchar(255) NOT NULL,
+    tahun_terbit Year NOT NULL,
+    kategori_id int NOT NULL, 
+    FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+)
+
+3. A. INSERT INTO `tb_user` (`id`, `name`, `email`, `password`) VALUES
+(1, 'John Doe', 'johndoe@doe.com', 'john123'),
+(2, 'Jane Doe', 'jane@doe.com', 'jenita123');
+
+B. INSERT INTO `tb_kategori`(`id`, `name`) VALUES 
+('','Novel'),
+('','Dongeng'),
+('','Komik')
+
+4. 
+
+5.
