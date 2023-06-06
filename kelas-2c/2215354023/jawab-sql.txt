@@ -1,0 +1,52 @@
+
+### NOMOR SATU ( 1 )
+CREATE DATABASE perpustakaan
+
+### NOMOR DUA ( 2 )
+a. CREATE TABLE tb_user (
+        id int AUTO_INCREMENT,
+        name varchar(255)		NOT NULL,
+        email varchar(255)		NOT NULL,
+        password varchar(255)	NOT NULL,
+        PRIMARY KEY (id)
+    )
+
+b. CREATE TABLE tb_kategori (
+        id int AUTO_INCREMENT,
+        name varchar(255)		NOT NULL,
+        PRIMARY KEY (id)
+    )
+
+c. CREATE TABLE tb_buku (
+        id int AUTO_INCREMENT PRIMARY KEY,
+        judul varchar(255)		    NOT NULL,
+        penerbit varchar(255)		NOT NULL,
+        pengarang varchar(255)		NOT NULL,
+        tahun_terbit Year           NOT NULL,
+        kategori_id int             NOT NULL,
+        FOREIGN KEY(kategori_id) REFERENCE tb_kategori(id)
+    )
+
+###NOMOR TIGA ( 3 )
+a.  INSERT INTO tb_user (name, email, password)
+    VALUES  ('John Doe', 'John@Doe.com', 'john123'), 
+            ('Jane Doe', 'Jane@Doe.com', 'jenita123');
+
+b.  INSERT INTO tb_kategori (name)
+    VALUES  ('novel'), 
+            ('dongeng'),
+            ('komik');
+
+c.  INSERT INTO tb_buku (judul, penerbit, pengarang, tahun_terbit, kategori_id)
+    VALUES  ('Ayat-Ayat Cinta', 'Basmala', 'Habibburahman', '2004', '1'),
+            ('Dilan1990', 'Pastel Books', 'Pidi Baiq', '2018', '1'),
+            ('Timun Mas', 'Keira', 'Dede Firmansyah', '2017', '2');
+
+###NOMOR EMPAT ( 4 )
+SELECT * FROM tb_buku
+JOIN tb_kategori ON tb_buku.kategori_id = tb_kategori.id
+
+###NOMOR LIMA ( 5 )
+UPDATE tb_buku
+SET tahun_terbit = 2001
+WHERE judul = 'Ayat-Ayat Cinta'
