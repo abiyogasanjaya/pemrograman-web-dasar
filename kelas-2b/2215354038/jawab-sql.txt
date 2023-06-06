@@ -1,0 +1,15 @@
+no 1.
+
+no 2.
+
+no 3.
+
+no 4.
+SELECT tb_buku.judul, tb_buku.penerbit, tb_buku.pengarang, tb_buku.tahun_terbit,tb_kategori.name as 'nama_ketegori'
+FROM `tb_buku`
+JOIN tb_kategori ON tb_buku.`kategori_id` = tb_kategori.id;
+
+no 5.
+UPDATE tb_buku
+SET tahun_terbit = 2001
+WHERE judul = 'Ayat-Ayat Cinta'; 
