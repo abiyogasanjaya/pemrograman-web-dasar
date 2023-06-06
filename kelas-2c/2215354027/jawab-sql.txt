@@ -32,3 +32,19 @@ VALUES ('John Doe', 'john@doe.com', 'john123'), ('Jane Doe','jane@doe.com','jeni
 
 b. Table Kategori
 INSERT INTO tb_kategori (nama) VALUES ('Novel'),('Dongeng'),('Komik');
+
+c. Table Buku
+INSERT INTO tb_buku (judul, penerbit, pengarang, tahun_terbit, kategori_id) 
+VALUES ('Ayat-Ayat Cinta', 'Bassmala', 'Habibburahman', '2004', '1'), 
+('Dilan 1990', 'Pastel Books', 'Pidi Baiq', '2018', '1'), 
+('Timun Mas', 'Keira', 'Dede Firmansyah', '2017', '2');
+
+Soal 4 (menampilkan data tb_buku yang dilengkapi dengan nama kategori dari masing-masing buku (menggunakan join))
+SELECT * FROM tb_buku 
+JOIN tb_kategori ON tb_buku.kategori_id = tb_kategori.id;
+
+Soal 5 (mengubah data table pada tb_buku untuk judul buku ayat-ayat cinta tahun_terbit nya menjadi 2001)
+UPDATE tb_buku
+	SET
+	tahun_terbit = '2001'
+	WHERE id = 1;
