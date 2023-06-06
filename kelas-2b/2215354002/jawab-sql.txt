@@ -39,6 +39,6 @@ INSERT INTO `tb_buku`(`id`, `judul`, `penerbit`, `pengarang`, `tahun_terbit`, `k
 ('','Dilan 1990','PastelBook','Pidi Baiq','2018','1'),
 ('','Timun Mas','Keira','Dede Fimansyah','2017','2')
 4.Soal Database 4
-SELECT `tb_buku.judul`, `tb_kategori.name` FROM `tb_buku` INNER JOIN tb_kategori ON tb_buku.id = tb_kategori.id;
+SELECT * FROM `tb_buku` INNER JOIN tb_kategori ON tb_buku.id = tb_kategori.id;
 5.Soal Database 5
 UPDATE `tb_buku` SET `tahun_terbit` = '2001' WHERE `tb_buku`.`id` = 1;
