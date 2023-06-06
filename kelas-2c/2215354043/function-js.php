@@ -36,11 +36,11 @@
 
         // Jawaban CONTOH
         function tampilkan() {
-            document.getElementById("contohJawaban").innerHTML = "Aku Tampil";
+            document.getElementById("contohJawaban").innerHTML = "Aku Tampil"
         }
 
         //Jalankan function 
-        tampilkan();
+        tampilkan()
 
         // Soal No. 1 Fungsi Teriak
         /* 
@@ -48,12 +48,16 @@
             Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
         */
 
+        
         function teriak() {
-            return "Halo Function!";
+            // Tulis Code mulai di sini
+            let string = 'Halo Function!';
+            document.getElementById("jawaban1").innerHTML = string;
+            // Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
         }
-
-        // Tampilkan jawaban dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH
-        document.getElementById("jawaban1").innerHTML = teriak();
+        
+        // Jalankan function teriak
+        teriak()
 
         // Soal No. 2 Fungsi Kalikan
         /* 
@@ -63,12 +67,18 @@
             Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
         */
 
+        
         function kalikan(num1, num2) {
-            return num1 * num2;
+            // Code kamu mulai dari sini
+            let result = num1*num2;
+            document.getElementById("jawaban2").innerHTML = result;
+            // Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
         }
+        
 
-        // Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
-        document.getElementById("jawaban2").innerHTML = kalikan(5, 4);
+
+        // Jalankan function kalikan
+        kalikan(5, 4)
 
         // Soal No. 3 Fungsi buatKalimat
         /* 
@@ -86,17 +96,22 @@
             "Nama saya Agus, umur saya 30 tahun, alamat saya di Jln. Malioboro, Yogjakarta, dan saya punya hobby yaitu gaming!"
             Tampilkan dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH
         */
-
+    
         function buatKalimat(nama, umur, alamat, hobi) {
-            return "Nama saya " + nama + ", umur saya " + umur + " tahun, alamat saya di " + alamat + ", dan saya punya hobby yaitu " + hobi + "!";
+            // Code kamu mulai dari sini
+            document.getElementById("jawaban3").innerHTML = `Nama saya ${nama}, umur saya ${umur} tahun, alamat saya di ${alamat}, dan saya punya hobby yaitu ${hobi}!`;
+            // Tampilkan dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH.
         }
 
-        // Tampilkan jawaban dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH
-        var name = "Luh Gede Susanti Sri Maharani";
-        var age = 19;
-        var address = "tabanan selemadeg";
-        var hobby = "shopping";
-        document.getElementById("jawaban3").innerHTML = buatKalimat(name, age, address, hobby);
+
+        // Jalankan function buatKalimat
+        var name = "John Doe";
+        var age = 30;
+        var address = "Jln. Malioboro, Yogjakarta";
+        var hobby = "gaming";
+        buatKalimat(name, age, address, hobby);
     </script>
 </body>
+
+
 </html>
