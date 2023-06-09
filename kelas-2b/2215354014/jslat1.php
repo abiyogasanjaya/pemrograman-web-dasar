@@ -63,14 +63,14 @@
             var seventh = 'it!';
 
             // Buatlah agar kata-kata di atas menjadi kalimat dalam variabel string dengan nama sentence
-            var sentence = word + ' ' + second + ' ' + third +  ' ' + fourth +  ' ' + fifth +  ' ' + sixth +  ' ' + seventh //Edit variabel ini sehingga outputnya "Javascript is awesome and I love it!"
+            var sentence = word+ ' ' + second+ ' ' + third+ ' ' + fourth+ ' ' + fifth+ ' ' + sixth+ ' ' + seventh;//Edit variabel ini sehingga outputnya "Javascript is awesome and I love it!"
 
             // dari sini code jangan diganggu
             document.getElementById("formSentence").innerHTML = sentence
             // sampai sini code jangan diganggu
 
-           // Soal No. 2 Memecah string dengan mengakses karakter berdasarkan indexnya
-           var kalimat = 'wow JavaScript is so cool';
+            // Soal No. 2 Memecah string dengan mengakses karakter berdasarkan indexnya
+            var kalimat = 'wow JavaScript is so cool';
             var contohKataPertama = kalimat[0] + kalimat[1] + kalimat[2]; // ini contohnya
             var kataKedua = kalimat.split(' ')[1];
             var kataKetiga = kalimat.split(' ')[2];
