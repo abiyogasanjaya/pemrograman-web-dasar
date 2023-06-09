@@ -1,0 +1,44 @@
+1.Soal Database 1
+CREATE DATABASE perpustakaan;
+2.Soal Database 2
+A.
+CREATE TABLE tb_user (
+    id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name Varchar(255) NOT NULL,
+    email Varchar(255) NOT NULL,
+   password  Varchar(255) NOT NULL
+);
+B.
+CREATE TABLE tb_kategori(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    name Varchar(255) NOT NULL
+);
+C.
+CREATE TABLE tb_buku(
+    id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    judul Varchar(255) NOT NULL,
+    penerbit Varchar(255) NOT NULL,
+    pengarang Varchar(255) NOT NULL,
+    tahun_terbit Year NOT NULL,
+    kategori_id int NOT NULL, 
+    FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+)
+3.Soal Database 3
+A.
+INSERT INTO `tb_user`(`id`, `name`, `email`, `password`) VALUES 
+('','John Doe','john@doe.com','john123'),
+('','Jane Doe','jane@doe.com','janila123');
+B.
+INSERT INTO `tb_kategori`(`id`, `name`) VALUES 
+('','Novel'),
+('','Dongeng'),
+('','Komik')
+C.
+INSERT INTO `tb_buku`(`id`, `judul`, `penerbit`, `pengarang`, `tahun_terbit`, `kategori_id`) VALUES 
+('','Ayat-ayat Cinta','Basmala','Habibburahman','2004','1'),
+('','Dilan 1990','PastelBook','Pidi Baiq','2018','1'),
+('','Timun Mas','Keira','Dede Fimansyah','2017','2')
+4.Soal Database 4
+SELECT * FROM `tb_buku` INNER JOIN tb_kategori ON tb_buku.ketogori_id = tb_kategori.id;
+5.Soal Database 5
+UPDATE `tb_buku` SET `tahun_terbit` = '2001' WHERE `tb_buku`.`id` = 1;

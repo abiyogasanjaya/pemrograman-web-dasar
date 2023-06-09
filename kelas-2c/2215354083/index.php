@@ -7,11 +7,12 @@
     <title>Document</title>
     <style>
         body{
-            background-color: salmon;
+            background-color: white;
         }
     </style>
 </head>
 <body>
     <h1>Hello World</h1>
+    <h1>Hello Dunia</h1>
 </body>
-</html>
+</html>w

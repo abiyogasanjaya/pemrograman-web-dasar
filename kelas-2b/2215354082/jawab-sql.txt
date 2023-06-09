@@ -1,0 +1,46 @@
+1. CREATE Database: `perpustakaan`
+
+2.
+A. CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+);
+  
+B. CREATE TABLE `tb_kategori` (
+  `id` INT(11) PRIMARY KEY AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL
+);
+
+C. CREATE TABLE tb_buku(
+    id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    judul Varchar(255) NOT NULL,
+    penerbit Varchar(255) NOT NULL,
+    pengarang Varchar(255) NOT NULL,
+    tahun_terbit Year NOT NULL,
+    kategori_id int NOT NULL, 
+    FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+)
+
+3. A. INSERT INTO `tb_user` (`id`, `name`, `email`, `password`) VALUES
+(1, 'John Doe', 'johndoe@doe.com', 'john123'),
+(2, 'Jane Doe', 'jane@doe.com', 'jenita123');
+
+B. INSERT INTO `tb_kategori`(`id`, `name`) VALUES 
+('','Novel'),
+('','Dongeng'),
+('','Komik')
+
+C. INSERT INTO `tb_buku` (`judul`, `penerbit`, `pengarang`, `tahun_terbit`,`kategori_id`) VALUES
+(1,Ayat-ayat Cinta, 'Basmala', 'Habibburahman', '2004', `1`),
+(2,'Dilan 1990','Pastel Books','Pidi Baiq','2018','1'),
+(3,'Timun Mas','Keira','Dede Firmansyah','2017','2')
+
+4. SELECT tb_buku.id, tb_buku.judul, tb_buku.penerbit, tb_buku.pengarang, tb_buku.tahun_terbit, tb_kategori.name AS kategori
+FROM tb_buku
+JOIN tb_kategori ON tb_buku.kategori_id = tb_kategori.id;
+
+5.UPDATE tb_buku
+SET tahun_terbit = 2001
+WHERE judul = 'Ayat-Ayat Cinta';
