@@ -20,10 +20,10 @@
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
         */
     $kids = array ("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" ); // Lengkapi di sini
-    $adults= array ("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
+    $adults = array ("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
     echo "Array Kids : ";
     print_r($kids);
-    echo "Array Adults :";
+    echo "Array Adults : ";
     print_r($adults);
 
     echo "<h3> Soal 2</h3>";
