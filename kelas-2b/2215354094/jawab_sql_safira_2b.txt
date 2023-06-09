@@ -1,0 +1,48 @@
+1. CREATE DATABASE penduduk;
+==========================
+2. a).
+    CREATE TABLE tb_user (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    password varchar(255)NOT NULL
+);
+b).
+    CREATE TABLE tb_kategori (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255) NOT NULL
+);
+c).
+    CREATE TABLE tb_buku (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    judul varchar(255) NOT NULL,
+    penerbit varchar(255) NOT NULL,
+    pengarang varchar(255)NOT NULL,
+    tahun_terbit year NOT NULL,
+    kategori int,
+    FOREIGN KEY (kategori) REFERENCES tb_kategori(id)
+);
+=======================================
+3. 
+a). 
+INSERT INTO tb_user(name,email,password) VALUES ('Jhon Doe', 'Jhon@doe.com', 'jhon123');
+INSERT INTO tb_user(name,email,password) VALUES ('Jane Doe', 'Jane@doe.com', 'jenita123');
+b). 
+INSERT INTO tb_kategori(name) VALUES('Novel')
+INSERT INTO tb_kategori(name) VALUES('Dongeng')
+INSERT INTO tb_kategori(name) VALUES('Komik')
+c).
+INSERT INTO tb_buku(judul, penerbit, pengarang, tahun_terbit, kategori)
+VALUES ('Ayat-ayat Cinta','basmala', 'habibburhaman','2004', 1)
+INSERT INTO tb_buku(judul, penerbit, pengarang, tahun_terbit, kategori)
+VALUES('Dilan 1990','pastel Books', 'pidiBaiq','2018', 1)
+INSERT INTO tb_buku(judul, penerbit, pengarang, tahun_terbit, kategori)
+VALUES('Timun mas','Keira', 'Dede firmasyah','2017', 2)
+===============================================================================================
+4).
+SELECT* FROM tb_buku JOIN tb_kategori ON tb_buku.kategori= tb_kategori.id
+============================================================================================
+5).
+UPDATE tb_buku
+SET tahun_terbit=2001
+WHERE judul = 'Ayat-ayat Cinta'

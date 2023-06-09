@@ -1,0 +1,64 @@
+SOAL DATABASE 1
+code:
+    CREATE DATABASE dbperpustakaan
+
+SOAL DATABASE 2
+code:
+A
+    CREATE TABLE tb_user (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        nama varchar(255),
+        email varchar(255),
+        password varchar(255)
+    );
+B
+    CREATE TABLE tb_kategori (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        nama varchar(255)
+    );
+C
+    CREATE TABLE tb_buku (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        judul varchar(255),
+        penerbit varchar(255),
+        pengarang varchar(255),
+        tahun_terbit year,
+    	kategori_id INT,
+    	FOREIGN KEY (kategori_id) REFERENCES tb_kategori(id)
+    );
+
+SOAL DATABASE 3 
+code:
+A
+        INSERT INTO tb_user (nama, email, password) 
+        VALUES 
+        ('John Doe', 'john@doe.com', 'john123'),
+        ('Jane Doe', 'jane@doe.com', 'jenita123')
+
+B 
+    INSERT INTO tb_kategori (nama) 
+    VALUES 
+    ('Novel'),
+    ('Dongeng'),
+    ('Komik')
+C
+    INSERT INTO tb_buku (judul, penerbit, pengarang, tahun_terbit, kategori_id)
+    VALUES 
+	('Ayat-Ayat Cinta', 'Basmala', 'Habbiburahman', '2004', 1),
+    ('Dilan', 'Pastel Book', 'Pidi Baiq', '2018', 1),
+    ('Timun Mas', 'Keira', 'Dede Firmansyah', '2017', 2)
+
+SOAL DATABASE 4 
+code:
+    SELECT tb_buku.judul, tb_buku.penerbit, tb_buku.pengarang, tb_buku.tahun_terbit, tb_kategori.nama as 'nama_kategori'
+    FROM `tb_buku`
+    JOIN tb_kategori ON tb_buku.`kategori_id` = tb_kategori.id;
+
+SOAL DATABASE 5
+code:
+    UPDATE `tb_buku`
+    SET `tahun_terbit` = '2001'
+    WHERE tahun_terbit = 'Ayat-Ayat Cinta'
+
+
+    
